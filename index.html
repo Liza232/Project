@@ -2,181 +2,194 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!-- <link rel="stylesheet" href="static/styles/style.css"> -->
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SYNERGY</title>
+  <link rel="Shortcut Icon" href="iso.png" type="image/x-icon">
+  <style>
+    .p {
+      margin: 0 auto;
+      height: 600px;
+      width: 650px;
+      text-align: center;
+    }
 
-        .card-img-top{
-            margin: 0 avto;
-            height: 200px;
-            width: 150px;
-        }
-        .card{
-            margin: 0 avto;
-            width: 350px;
-        }
-       
-    </style>
-    <link rel="stylesheet" href="./bootstrap-4.0.0/dist/css/bootstrap.min.css">
+    .card-img-top {
+      margin: 0 avto;
+      height: 200px;
+      width: 150px;
+    }
 
+    .card {
+      margin: 0 avto;
+      width: 350px;
+    }
+
+    .c {
+      position: fixed;
+      bottom: 0;
+      right: 25px;
+    }
+  </style>
+  <link rel="stylesheet" href="C:\Users\Admin\Downloads\bootstrap-4.0.0\bootstrap-4.0.0\dist\css\bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 </head>
-<!-- коммент ctrl + кнопка слеша где точка ещё есть -->
 
-<body>
-    <div class="container">
-        <div class="row" style="padding-top: 20px; padding-left: 45px">
-            <div class="card">
-                <img class="card-img-top" src="fut.jpg" alt="Футбол">
-                <div class="card-body">
-                    <h4 class="card-title">Кубок регионов 2024</h4>
-                    <p class="card-text">
-                        Город: Саранск <br>
-                        Даты проведения: 18 июля - 24 июля
-                    </p>
-                    <a href="fut.html" class="btn btn-primary">Узнать подробнее</a>
-                </div>
-            </div>
+<body style="background-color: rgb(214, 153, 194)">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="background-color: black;">
+    <a class="navbar-brand" href="#" style="color:rgb(204, 49, 204);">SYNERGY</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <div class="card">
-                <img class="card-img-top" src="basket.jpg" alt="Баскетбол">
-                <div class="card-body">
-                    <h4 class="card-title">Финал первенства России по баскетболу</h4>
-                    <p class="card-text">
-                        Город: Москва <br>
-                        Даты проведения: 11 июля - 19 июля
-                    </p>
-                    <a href="basket.html" class="btn btn-primary">Узнать подробнее</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img-top" src="sw.jpg" alt="Плавание">
-                <div class="card-body">
-                    <h4 class="card-title">Чемпионат России по синхронному плаванию</h4>
-                    <p class="card-text">
-                        Город: Екатеринбург <br>
-                        Даты проведения: 22 апреля - 27 апреля
-                    </p>
-                    <a href="sw.html" class="btn btn-primary">Узнать подробнее</a>
-                </div>
-            </div>
-
-            <div class="row" style="padding-top: 30px; padding-left: 15px">
-            <div class="card">
-                <img class="card-img-top" src="shah.jpg" alt="Шахматы">
-                <div class="card-body">
-                    <h4 class="card-title">Шахматы Фишера в РШШ</h4>
-                    <p class="card-text">
-                        Город: Москва <br>
-                        Даты проведения: 29 июня - 30 июня
-                    </p>
-                    <a href="shah.html" class="btn btn-primary">Узнать подробнее</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img-top" src="prog.jpg" alt="Спортивное программирование">
-                <div class="card-body">
-                    <h4 class="card-title">Всероссийские соревнования по спортивному программированию</h4>
-                    <p class="card-text">
-                        Город: Оренбург <br>
-                        Даты проведения: 26 июня - 30 июня
-                    </p>
-                    <a href="prog.html" class="btn btn-primary">Узнать подробнее</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img-top" src="tenis.jpg" alt="Теннис">
-                <div class="card-body">
-                    <h4 class="card-title">Республиканский турнир по теннису "Лето в Зубово"</h4>
-                    <p class="card-text">
-                        Город: Уфа, Башкортостан <br>
-                        Даты проведения: 24 июня - 28 июня
-                    </p>
-                    <a href="tenis.html" class="btn btn-primary">Узнать подробнее</a>
-                </div>
-            </div>
-            </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="#" style="color: aliceblue;">Главная страница </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: aliceblue;">Контакты</a>
+        </li>
+      </ul>
 
 
+      <a class="nav-link disabled" href="#" style="color: aliceblue;">Личный кабинет</a>
+
+    </div>
+  </nav>
+
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active" style="background-color: black;">
+        <div class="p">
+          <img class="d-block w-100" src="n6puRpTUAkU.jpg" alt="900x400" style="height: 550px;">
         </div>
-    </div>   
+      </div>
+      <div class="carousel-item" style="background-color: black;">
+        <div class="p">
+          <img class="d-block w-100" src="8wPV1uHMTrY.jpg" alt="900x400" style="height: 550px;">
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Календарь -->
+  <div class="c">
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div id="calendar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row" style="padding-top: 20px; padding-left: 45px">
+        <div class="card" >
+            <img class="card-img-top" src="fut.jpg" alt="Футбол">
+            <div class="card-body">
+                <h4 class="card-title">Кубок регионов 2024</h4>
+                <p class="card-text">
+                    Город: Саранск <br>
+                    Даты проведения: 18 июля - 24 июля
+                </p>
+                <a href="fut2.html" class="btn btn-primary">Узнать подробнее</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="basket.jpg" alt="Баскетбол">
+            <div class="card-body">
+                <h4 class="card-title">Всероссийское соревнование по баскетболу</h4>
+                <p class="card-text">
+                    Город: Новосибирск <br>
+                    Даты проведения: 15 сентября - 18 сентября
+                </p>
+                <a href="basket2.jpg" class="btn btn-primary">Узнать подробнее</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="sw.jpg" alt="Плавание">
+            <div class="card-body">
+                <h4 class="card-title">Чемпионат России по синхронному плаванию</h4>
+                <p class="card-text">
+                    Город: Екатеринбург <br>
+                    Даты проведения: 22 апреля - 27 апреля
+                </p>
+                <a href="sw2.jpg" class="btn btn-primary">Узнать подробнее</a>
+            </div>
+        </div>
+
+        <div class="row" style="padding-top: 30px; padding-left: 15px">
+        <div class="card">
+            <img class="card-img-top" src="shah.jpg" alt="Шахматы">
+            <div class="card-body">
+                <h4 class="card-title">Шахматы Фишера в РШШ</h4>
+                <p class="card-text">
+                    Город: Москва <br>
+                    Даты проведения: 29 июня - 30 июня
+                </p>
+                <a href="shah2.jpg" class="btn btn-primary">Узнать подробнее</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="prog.jpg" alt="Спортивное программирование">
+            <div class="card-body">
+                <h4 class="card-title">Всероссийские соревнования по спортивному программированию</h4>
+                <p class="card-text">
+                    Город: Оренбург <br>
+                    Даты проведения: 26 июня - 30 июня
+                </p>
+                <a href="prog2.jpg" class="btn btn-primary">Узнать подробнее</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="tenis.jpg" alt="Теннис">
+            <div class="card-body">
+                <h4 class="card-title">Республиканский турнир по теннису "Лето в Зубово"</h4>
+                <p class="card-text">
+                    Город: Уфа, Башкортостан <br>
+                    Даты проведения: 24 июня - 28 июня
+                </p>
+                <a href="tenis2.jpg" class="btn btn-primary">Узнать подробнее</a>
+            </div>
+        </div>
+        </div>
+
+
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="calendar.js"></script>
+  <script src="sort.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
 </body>
 
 </html>
-<!--         
-    <h1>HTML</h1>
-    <p>HTML (от англ. <span> HyperText Markup Language </span> — «язык гипертекстовой разметки») — стандартизированный
-        язык
-        <a href="#">гипертекстовой</a> разметки документов для просмотра веб-страниц в браузере. Веб-браузеры получают<a
-            href="https://youtube.com" target="_blank"> HTML </a> документ от
-        сервера по протоколам HTTP/HTTPS или открывают с локального диска, далее интерпретируют код в интерфейс, который
-        будет отображаться на экране монитора.
-    </p>
-    <p>Элементы <a href="#"">HTML</a> являются строительными блоками HTML страниц. С помощью HTML разные конструкции,
-        изображения и
-        другие объекты, такие как интерактивная веб-форма, <a href=" #">могут</a> быть встроены в отображаемую
-        страницу.
-        HTML
-        предоставляет средства для создания заголовков, абзацев, списков, ссылок, цитат и других элементов. Элементы
-        HTML <a href="#">выделяются</a> тегами, записанными с использованием угловых скобок. Такие теги, как img и
-        input, напрямую
-        вводят контент на страницу. Другие теги, такие как
-        p, окружают и оформляют текст внутри себя и могут включать другие теги в качестве подэлементов. Браузеры не
-        отображают HTML-теги, но используют их для интерпретации содержимого страницы.</p>
-    <p>Язык XHTML является более строгим вариантом HTML, он следует синтаксису XML и является приложением языка XML в
-        области разметки гипертекста.</p>
-    <p>В HTML можно встроить язык программирования JavaScript с помощью тега. Также включение CSS в HTML позволяет
-        задавать внешний вид и макет страницы.</p>
-<img class="img-thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/HTML.svg/411px-HTML.svg.png" alt="Thumbnail image">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/HTML.svg/411px-HTML.svg.png" alt="Картинка в Википедии">
-
-    <ol>
-<li>Общее представление </li>
-<li>Браузеры </li>
-<li>Версии</li>
-<li>Структура HTML-документа
-    <ol>
-        <li>Семантические теги</li>
-        <li>Специальные символы</li>
-    </ol>
-</li>
-<li>Браузерные войны</li>
-<li>См. также</li>
-<li>Примечания</li>
-<li>Литература</li>
-<li>Ссылки</li>
-</ol>    
-
-
-
-    <h2>Общее представление</h2>
-    <p>Язык гипертекстовой разметки HTML был разработан британским учёным Тимом Бернерсом-Ли приблизительно в 1986—1991
-        годах в стенах ЦЕРНа в Женеве в Швейцарии[3]. HTML создавался как язык для обмена научной и технической
-        документацией, пригодный для использования людьми, не являющимися специалистами в области вёрстки. HTML успешно
-        справлялся с проблемой сложности SGML путём определения небольшого набора структурных и семантических элементов
-        — дескрипторов. Дескрипторы также часто называют «тегами». С помощью HTML можно легко создать относительно
-        простой, но красиво оформленный документ. Помимо упрощения структуры документа, в HTML внесена поддержка
-        гипертекста. Мультимедийные возможности были добавлены позже.</p>
-    <p>Первым общедоступным описанием HTML был документ «Теги HTML», впервые упомянутый в Интернете Тимом Бернерсом-Ли в
-        конце 1991 года,[4][5]. В нём описываются 18 элементов, составляющих первоначальный, относительно простой дизайн
-        HTML. За исключением тега гиперссылки, на них сильно повлиял SGMLguid, внутренний формат документации,
-        основанный на стандартном обобщенном языке разметки (SGML), в CERN. Одиннадцать из этих элементов всё ещё
-        существуют в HTML 4[6].
-
-    </p>
-    <p>Изначально язык HTML был задуман и создан как средство структурирования и форматирования документов без их
-        привязки к средствам воспроизведения (отображения). В идеале, текст с разметкой HTML должен был без
-        стилистических и структурных искажений воспроизводиться на оборудовании с различной технической оснащённостью
-        (цветной экран современного компьютера, монохромный экран органайзера, ограниченный по размерам экран мобильного
-        телефона или устройства и программы голосового воспроизведения текстов). Однако современное применение HTML
-        очень далеко от его изначальной задачи. Например, тег
-        table предназначен для создания в документах таблиц, но иногда используется и для оформления размещения
-        элементов
-        на странице. С течением времени основная идея платформонезависимости языка HTML была принесена в жертву
-        современным потребностям в мультимедийном и графическом оформлении.</p> -->
-

@@ -1,0 +1,66 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #ccd3e3;
+}
+#main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+  padding: 20px;
+  align-items: center;
+}
+.contacts {
+  width: 50%;
+  margin-top: 20px;
+}
+.contacts p, .contacts header {
+  margin: 0;
+  padding: 10px 0;
+}
+
+iframe {
+  width: 100%;
+}
+
+.map {
+  margin-top: 20px;
+  width: 50%;
+}
+footer {
+  background: #8b9fcf;
+  text-align: center;
+  padding: 10px 0;
+}
+footer img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  bottom: 10px; 
+}
+
+.socials {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.socials h3 {
+  margin-bottom: 10px;
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Личный кабинет пользователя</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Личный кабинет</h1>
+        <p><strong>ФИО:</strong> <span id="fullName"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Любимые виды спорта:</strong> <span id="favoriteSports"></span></p>
+        <div class="form-group">
+            <label for="sportsInput">Введите ваши любимые виды спорта:</label>
+            <input type="text" class="form-control" id="sportsInput">
+        </div>
+        <button class="btn btn-primary" onclick="saveFavoriteSports()">Сохранить</button>
+    </div>
+
+    <script>
+        // Предполагается, что данные о пользователе и любимых видах спорта будут получены из базы данных или других источников
+        document.getElementById("fullName").textContent = "Иванов Иван Иванович"; // Здесь подставьте реальное ФИО пользователя
+        document.getElementById("email").textContent = "ivanov@example.com"; // Здесь подставьте реальный email пользователя
+
+        // Функция сохранения любимых видов спорта
+        function saveFavoriteSports() {
+            var favoriteSports = document.getElementById("sportsInput").value;
+            document.getElementById("favoriteSports").textContent = favoriteSports;
+            // Добавьте здесь скрипт для сохранения данных в базу данных или других источниках
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
